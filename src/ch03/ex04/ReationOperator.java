@@ -1,4 +1,4 @@
-package chapter03.ex04;
+package ch03.ex04;
 
 public class ReationOperator {
 	public static void main(String[] args) {

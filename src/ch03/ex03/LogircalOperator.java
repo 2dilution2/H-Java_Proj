@@ -1,4 +1,4 @@
-package chapter03.ex03;
+package ch03.ex03;
 
 public class LogircalOperator {
 
