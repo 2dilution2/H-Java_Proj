@@ -8,12 +8,12 @@ public class Non_Ractangle_Array {
 	public static void main(String[] args) {
 
 //		 1. 비정방형 선언 : 
-//			행의 방번호만 지정 : 0,1,2
+//		행의 방번호만 지정 : 0,1,2
 		
 		int[][] arr1 = new int[3][];
-		arr1[0] = new int[5];			// 0변행의 열의 갯수 5
-		arr1[1] = new int[2];			// 1번행의 열의 갯수 2
-		arr1[2] = new int[4];			// 2번행의 열의 갯수 4
+		arr1[0] = new int[5];			// 0蹂��뻾�쓽 �뿴�쓽 媛��닔 5
+		arr1[1] = new int[2];			// 1踰덊뻾�쓽 �뿴�쓽 媛��닔 2
+		arr1[2] = new int[4];			// 2踰덊뻾�쓽 �뿴�쓽 媛��닔 4
 		
 		
 //		직접 값을 할당
@@ -32,10 +32,10 @@ public class Non_Ractangle_Array {
 		arr1[2][3] = 24;
 		
 		System.out.println("------------------------------");
-		int[][] arr2 = new int[3][];		// 비정방형 배열 선언
-			arr2[0] = new int[100];		// 10의 배수 입력
-			arr2[1] = new int[200];		// 20의 배수 입력
-			arr2[2] = new int[150];		// 30의 배수 입력
+		int[][] arr2 = new int[3][];		// 鍮꾩젙諛⑺삎 諛곗뿴 �꽑�뼵
+			arr2[0] = new int[100];		// 10�쓽 諛곗닔 �엯�젰
+			arr2[1] = new int[200];		// 20�쓽 諛곗닔 �엯�젰
+			arr2[2] = new int[150];		// 30�쓽 諛곗닔 �엯�젰
 			
 		System.out.println(arr2.length);
 		System.out.println(arr2[0].length);
