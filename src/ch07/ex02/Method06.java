@@ -1,4 +1,4 @@
-package ch07.ex03;
+package ch07.ex02;
 
 class MethodOverriding {
 	// 메소드 오버라이딩 : 부모클래스의 메소드를 재정의해서 사용

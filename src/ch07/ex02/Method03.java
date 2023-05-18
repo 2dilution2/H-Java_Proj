@@ -1,4 +1,4 @@
-package ch07.ex03;
+package ch07.ex02;
 
 class G {
 	// 메소드도 2가지 타입
@@ -23,10 +23,10 @@ public class Method03 {
 		// 1. 인스턴스메소드 호출 : 객체화해야 호출이 가능한 메소드
 		G g1 = new G();
 		g1.sum(30, 40);
-		int a = g1.diff(50, 60);
+		int a = G.diff(50, 60);
 		
 		System.out.println(a);
-		System.out.println(g1.diff(90, 80));
+		System.out.println(G.diff(90, 80));
 		
 		// 2. 정적메소드 호출 : 객체생성없이 클래스 이름으로 호출가능
 		int b;

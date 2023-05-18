@@ -1,4 +1,4 @@
-package ch07.ex03;
+package ch07.ex02;
 
 public class Method04 {
 	
