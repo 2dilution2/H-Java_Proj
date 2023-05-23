@@ -41,7 +41,7 @@ public class Ex02 {
 		for (int i = 0; i < h1.length; i++) {
 			 a += h1[i].maxSpeed;
 		}
-		double avg = a / h1.length;
+		double avg = (double) (a / h1.length);
 		
 		System.out.printf("최대 스피드의 평균은 %4.2f입니다.\n", avg);
 	}
