@@ -12,11 +12,11 @@ interface Animal3 {
 
 // 인터페이스가 인터페이스를 상속 할 수 있다. (extends)
 
-interface k extends Animal1, Animal2, Animal3 {
+interface K extends Animal1, Animal2, Animal3 {
 	
 }
 
-class G implements k {
+class G implements K {
 
 	@Override
 	public void cry() {
@@ -40,6 +40,15 @@ public class Inharitance02 {
 		K k1 = new G();
 		k1.cry();
 		k1.run();
+		k1.eat();
 		
+		Animal1 a1 = new G();
+		a1.cry();
+		
+		Animal2 a2 = new G(); 
+		a2.run();
+		
+		Animal3 a3 = new G(); 
+		a3.eat();
 	}
 }
