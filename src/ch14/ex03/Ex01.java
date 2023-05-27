@@ -1,4 +1,4 @@
-package ch14;
+package ch14.ex03;
 
 class A {
 	int a;
