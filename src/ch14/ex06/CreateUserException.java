@@ -49,25 +49,42 @@ class A {
 		}
 	}
 	
-	// abc_1() 메소드를 호출하는 메소드
-	void bcd_1 () {
-		abc_1(80);
-	}
-	
-	
-	void abc_2(int num) throws MyException {
-		void 
-	}
-	
-	
-	void bcd_2 () {
+	// abc_1() 메소드를 호출 하는 메소드 
+		void bcd_1 () {
+			abc_1(60); 
+		}
 		
-	}
+		
+		//정수를 인풋받아서 70 이하 이면 예외를 강제로 발생시킴 (예외를 미루기 )
+		void abc_2(int num) throws MyException {   // abc_2() 메소드를 호출 하는 곳에서 예외를 처리해야함. 
+			if ( num > 70 ) {
+				//정상처리 
+				System.out.println("당신이 넣은 값은 : " + num + ", 이고 정상 값입니다. ");
+			} else {
+				//예외를 강제 발생 시킴  (trows : 예외를 미루기 , throw : 예외를 강제로 발생 시킴 ) 
+				throw mre1 ;   // 일반 예외 
+			}
+			
+		}
+		
+		void bcd_2() {
+			
+			try {
+				abc_2(60); 
+			} catch (MyException e) {
+				System.out.println(e.getMessage());   //MyException의 생성자에 넣는 오류 메세지를 출력하라. 
+				
+			}
+			
+		}
 
-}
+	}
 
 public class CreateUserException {
 	public static void main(String[] args) {
-
+		A a1 = new A(); 
+		a1.bcd_1(); 
+		
+		a1.bcd_2();
 	}
 }
